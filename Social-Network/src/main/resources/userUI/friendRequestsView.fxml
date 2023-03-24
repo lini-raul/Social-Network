@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendRequestsController">
+   <children>
+      <TableView fx:id="tableViewFriendRequests" layoutX="66.0" layoutY="90.0" prefHeight="214.0" prefWidth="274.0">
+        <columns>
+          <TableColumn fx:id="tableColumnUsername" prefWidth="136.0" text="Username" />
+          <TableColumn fx:id="tableColumnName" prefWidth="135.20001220703125" text="Name" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonAcceptRequest" layoutX="224.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleAcceptRequest" prefHeight="26.0" prefWidth="116.0" text="Accept request" />
+      <Button fx:id="buttonDeclineRequest" layoutX="66.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleDeclineRequest" prefHeight="26.0" prefWidth="105.0" text="Decline request" />
+      <Label layoutX="133.0" layoutY="35.0" text="Friend Requests">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
